@@ -21,6 +21,12 @@ Running from the terminal:
 
 ### Pipeline
 
+Tests are automatically triggered using GitHub actions when:
+
+- PR is raised/updated
+- Once a day at 12:00PM
+
+Workflow also allows for manually triggering.
 
 ## Application under test  
 Tests are written against the [MERN-ecommerce](https://github.com/zecarrera/mern-ecommerce/tree/master)
