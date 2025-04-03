@@ -1,0 +1,48 @@
+{
+    "type": "object",
+    "properties": {
+      "categories": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "_id": {
+              "type": "string",
+              "description": "Unique identifier for the category"
+            },
+            "name": {
+              "type": "string",
+              "description": "Name of the category"
+            },
+            "description": {
+              "type": "string",
+              "description": "Description of the category"
+            },
+            "products": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "description": "Product ID"
+              },
+              "description": "Array of product IDs associated with the category"
+            },
+            "isActive": {
+              "type": "boolean",
+              "description": "Indicates if the category is active"
+            }
+          },
+          "required": [
+            "_id",
+            "name",
+            "description",
+            "products",
+            "isActive"
+          ]
+        }
+      }
+    },
+    "required": [
+      "categories"
+    ]
+  }
+  

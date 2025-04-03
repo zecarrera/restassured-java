@@ -1,20 +1,24 @@
 package org.example;
 
-import io.restassured.RestAssured;
-import io.restassured.response.Response;
 import org.junit.jupiter.api.Test;
 
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.equalTo;
+import static io.restassured.RestAssured.*;
+import static org.hamcrest.Matchers.*;
 
-class HealthCheckTest {
+import org.example.config.RestAssuredConfig;
 
+class HealthCheckTest extends RestAssuredConfig {
+
+    /*
+     * This test exemplifies how to log the request URI and check on a response body property
+     */
     @Test
-    void testHealthEndpoint() {
-        Response response = RestAssured.get("/health");
-
-        assertThat(response.getStatusCode(), equalTo(200));
-
-        assertThat(response.jsonPath().getString("status"), equalTo("OK"));
+    void get_health_returns_200_and_status_OK() {
+        given()
+            .log().uri()
+            .get("/health")
+        .then()
+            .statusCode(200)
+            .body("status", equalTo("OK"));
     }
 }
