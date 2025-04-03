@@ -28,5 +28,7 @@ Tests are automatically triggered using GitHub actions when:
 
 Workflow also allows for manually triggering.
 
+Test report is uploaded as an artifact, once tests finish.
+
 ## Application under test  
 Tests are written against the [MERN-ecommerce](https://github.com/zecarrera/mern-ecommerce/tree/master)
