@@ -7,7 +7,7 @@
 
 # Build files
 build/
-
+bin/
 # Compiled class file
 *.class
 
