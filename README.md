@@ -1,12 +1,11 @@
 # restassured-java
 
 ## Summary
-This repo contains an example API testing framework using:
+This repo contains an example API testing framework using Java and the following tools:
 - RestAssured - API test library
 - JUnit5 - Test runner
-- Java
-- Gradle
-- GitHub actions
+- Gradle - Build tool
+- GitHub actions - CI tool
 
 ## Running tests 
 
