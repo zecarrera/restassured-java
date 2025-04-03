@@ -11,6 +11,10 @@ This repo contains an example API testing framework using Java and the following
 
 ### Locally
 
+Environment variable `ENVIRONMENT` should be set.  
+- local: when running using MERN-ecommerce app running locally.  
+- development: when running using MERN-ecommerce app deployed in dev.  
+
 Running from the terminal:
 
 ```shell 
